@@ -26,20 +26,20 @@ while Player1Wins != NeedWins and Player2Wins != NeedWins:
         else:
             print(Player2 + "の先手番でお願いします")
     print("それではよろしくお願いします。")
-    # while Winner != Player1 or Winner != Player2:
     print(Player1 + "と" + Player2 + "のうち、勝者を入力してください。")
     Winner = input()
     if Winner == Player1:
         Player1Wins += 1
+        Game += 1
     elif Winner == Player2:
         Player2Wins += 1
+        Game += 1
     else:
         print("入力エラーです。もう一度入力をお願いします。")
-    Game += 1
     Winner = "hoge"
     print("ただいま、" + Player1 + str(Player1Wins) + "-" + str(Player2Wins) + Player2 + "となっております")
 if Player1Wins == NeedWins:
     print(str(Player1Wins) + "-" + str(Player2Wins) + "で、" + Player1 + "が防衛を決めました。")
 else:
     print(str(Player1Wins) + "-" + str(Player2Wins) + "で、" + Player2 + "が奪取を決めました。")
-        
+    #羽生さんがんばれ
